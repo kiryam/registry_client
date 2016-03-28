@@ -1,4 +1,5 @@
 # Java Docker Registry client library
+[![Build Status](https://travis-ci.org/kiryam/registry_client.svg?branch=master)](https://travis-ci.org/kiryam/registry_client)
 
 
 Example:
