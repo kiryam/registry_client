@@ -1,6 +1,5 @@
 package ru.kiryam.registry_client.impl;
 
-import com.sun.istack.internal.Nullable;
 import org.apache.http.Header;
 import org.apache.http.message.BasicHeader;
 import org.json.JSONException;
@@ -44,7 +43,7 @@ public class RestTransportV2 implements Transport {
         return new URI(config.getScheme(), "", config.getHost(), config.getPort(), path, null, null);
     }
 
-    public URI getRealmPointUri(String realm, String service, @Nullable String scope){
+    public URI getRealmPointUri(String realm, String service, String scope){
         if( scope != null){
             return URI.create(String.format("%s?service=%s&scope=%s", realm, service, scope));
         }
