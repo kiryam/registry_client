@@ -1,7 +1,8 @@
 package ru.kiryam.registry_client;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
  */
 public interface Config {
 }

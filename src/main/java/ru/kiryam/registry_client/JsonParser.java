@@ -4,8 +4,17 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
+ * JSON parser interface
  */
+
 public interface JsonParser {
+    /**
+     * Parses given plain-text json to SONObject<
+     * @param data plain-text json
+     * @return JSONObject
+     * @throws JSONException
+     */
     JSONObject parse(String data) throws JSONException;
 }

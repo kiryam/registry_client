@@ -11,7 +11,7 @@ import java.util.Map;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 public class AuthenticateParserImplTest {
     @Test

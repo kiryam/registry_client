@@ -7,10 +7,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 public class AuthenticateParserImpl implements AuthenticateParser {
-    /*
+    /**
         Example:
         Bearer realm="https://auth.docker.io/token",service="registry.docker.io"
         Bearer realm="https://auth.docker.io/token",service="registry.docker.io",scope="repository:library/nginx:pull"

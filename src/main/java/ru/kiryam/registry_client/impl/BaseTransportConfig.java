@@ -5,7 +5,9 @@ import ru.kiryam.registry_client.TransportConfig;
 import java.net.URI;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
+ * Implementing transport config interface using URI
  */
 public class BaseTransportConfig implements TransportConfig {
     private final String scheme;

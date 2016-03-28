@@ -4,7 +4,7 @@ import org.apache.http.Header;
 import java.util.HashMap;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 public class BasicExecutorResponse extends AbstractExecutorResponse {
     public void setBody(String body) {
@@ -13,8 +13,8 @@ public class BasicExecutorResponse extends AbstractExecutorResponse {
 
     public void setHeaders(Header[] headers) {
         this.headers = new HashMap<>();
-        for(int i=0; i<headers.length; i++){
-            this.headers.put(headers[i].getName(), headers[i].getValue());
+        for (Header header : headers) {
+            this.headers.put(header.getName(), header.getValue());
         }
     }
 

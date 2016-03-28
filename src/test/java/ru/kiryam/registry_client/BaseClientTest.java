@@ -6,6 +6,7 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import ru.kiryam.registry_client.exception.ApiError;
 import ru.kiryam.registry_client.exception.AuthenticationException;
+import ru.kiryam.registry_client.impl.BaseClient;
 import ru.kiryam.registry_client.impl.BaseDockerImageTags;
 
 import java.util.ArrayList;
@@ -16,10 +17,10 @@ import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 @RunWith(MockitoJUnitRunner.class)
-public class ClientTest {
+public class BaseClientTest {
     @Mock
     private Transport transport;
 
@@ -31,9 +32,9 @@ public class ClientTest {
         tags.add("tag3");
         when(transport.getImageTagsInfo(anyString())).thenReturn(new BaseDockerImageTags(tags));
 
-        Client client = new Client(transport);
+        BaseClient baseClient = new BaseClient(transport);
 
-        DockerImageInfo imageInfo = client.getImageInfo(anyString());
+        DockerImageInfo imageInfo = baseClient.getImageInfo(anyString());
         assertNotNull(imageInfo);
         assertEquals(3, imageInfo.getTagInfo().getTags().size());
         assertEquals("tag2", imageInfo.getTagInfo().getTags().get(1));

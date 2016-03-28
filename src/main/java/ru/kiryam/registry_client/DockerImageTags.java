@@ -3,8 +3,15 @@ package ru.kiryam.registry_client;
 import java.util.List;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
+ * Docker tags acess interafce
  */
 public interface DockerImageTags {
-    List getTags();
+
+    /**
+     *
+     * @return list of available tags
+     */
+    List<String> getTags();
 }

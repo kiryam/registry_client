@@ -5,7 +5,7 @@ import ru.kiryam.registry_client.DockerImageTags;
 import java.util.List;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 public class BaseDockerImageTags implements DockerImageTags {
     private final List<String> tags;
@@ -15,7 +15,7 @@ public class BaseDockerImageTags implements DockerImageTags {
     }
 
     @Override
-    public List getTags() {
+    public List<String> getTags() {
         return tags;
     }
 }

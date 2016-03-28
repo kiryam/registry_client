@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import ru.kiryam.registry_client.JsonParser;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
  */
 public class SimpleJsonParser implements JsonParser {
     @Override

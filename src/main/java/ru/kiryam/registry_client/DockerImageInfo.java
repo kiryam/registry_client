@@ -1,8 +1,14 @@
 package ru.kiryam.registry_client;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
+ * Docker image info interface
  */
 public interface DockerImageInfo {
+
+    /**
+     * @return Tags access interface
+     */
     DockerImageTags getTagInfo();
 }

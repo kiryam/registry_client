@@ -17,7 +17,12 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * Created by kiryam on 25/03/16.
+ * @author Ivannikov Kirill (kiryam@kiryam.ru)
+ *
+ * Implementation of Docker Registry HTTP API V2
+ * @see <a href=https://docs.docker.com/v1.7/registry/spec/api/">Docker Registry HTTP API V2</a>
+ *
+ *
  * TODO: validate api version by query GET /v2/
  * TODO: stack traces into logging
  */
